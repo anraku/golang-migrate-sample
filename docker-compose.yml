@@ -1,0 +1,12 @@
+version: '2'
+services:
+  db:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: mysql
+  migrate:
+    image: migrate-sample:latest
+    depends_on:
+      - db
+    volumes:
+      - "./db:/root/db"
