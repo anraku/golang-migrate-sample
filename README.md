@@ -1,6 +1,6 @@
 ## マイグレーションファイル作成
 ```
-doc run migrate migrate create -ext sql -dir db/migrations -seq create_tests_table
+docker-compose run migrate migrate create -ext sql -dir db/migrations -seq create_tests_table
 ```
 
 ## マイグレーション実行

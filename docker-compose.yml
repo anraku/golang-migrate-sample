@@ -5,6 +5,7 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: mysql
   migrate:
+    tty: true
     image: migrate-sample:latest
     depends_on:
       - db
